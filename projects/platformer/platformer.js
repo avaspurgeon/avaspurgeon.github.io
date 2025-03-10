@@ -50,20 +50,21 @@ $(function () {
     // You must decide on the collectable type, the x position, the y position, the gravity, and the bounce strength
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
-createCollectable("database",350,400,.9,1);
-createCollectable("database",650, 200,.9,1);
-createCollectable("database", 950,100,.9,1);
-createCollectable("database", 1200,100,.9,1);
-createCollectable("database",1290,10,.9,1);
+createCollectable("steve",350,400,0.9,1);
+createCollectable("max",650, 200,0.9,1);
+createCollectable("grace", 950,100,0.9,1);
+createCollectable("database", 1200,100,0.9,1);
+createCollectable("diamond",1290,10,0.9,1);
     // TODO 3
     // Create cannons
     // You must decide the wall you want the cannon on, the position on the wall, and the time between shots in milliseconds
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
-createCannon ("right", 450,1300,30,30);
-createCannon ("top", 350,1300,30,30);
-createCannon ("top", 1200,1300,30,30,);
-createCannon("right", 750,1300,30,30);
+    createCannon("right", 700,900,50,50);
+    createCannon("right", 450,900,50,50);
+    createCannon("top", 1000,900,50,50);
+    createCannon("top", 450,900,50,50);
+
     /////////////////////////////////////////////////
     //////////ONLY CHANGE ABOVE THIS POINT///////////
     /////////////////////////////////////////////////

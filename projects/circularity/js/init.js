@@ -20,25 +20,25 @@ var init = function (window) {
         ////////////////////////////////////////////////////////////
         
         // TODO 1 : Declare and initialize our variables
-        var circle;
-        var circles = [];
+        var circle; //variable holding a single circle
+        var circles = [];// storing all circles in an array
         // TODO 2 : Create a function that draws a circle 
-        function drawCircle() {
-            circle = draw.randomCircleInArea(canvas, true, true, "#999", 2);
+        function drawCircle() { //draws a circle and stores in a circle array
+            circle = draw.randomCircleInArea(canvas, true, true, "#999", 2);//
             physikz.addRandomVelocity(circle, canvas, 5, 5);
             view.addChild(circle);
             circles.push(circle);
-        }
+        }// allows us to reuse the code/ makes the circle
 
             
 
-        // TODO 3 / 7 : Call the drawCircle() function 
+        // TODO 3 / 7 : Call the drawCircle() function //draws the circle
         /*
             drawCircle();
             drawCircle();
             drawCircle();
             drawCircle();
-            drawCircle();
+            drawCircle(); //multipe cirles on screen
             */
             for(var i = 0; i < 100; i++){
                 drawCircle();
@@ -57,11 +57,11 @@ var init = function (window) {
         function update() {
 
             // TODO 4 : Update the circle's position //
-            physikz.updatePosition(circles[0]);
-            physikz.updatePosition(circles[1]);
-            physikz.updatePosition(circles[2]);
-            physikz.updatePosition(circles[3]);
-            physikz.updatePosition(circles[4]);
+            physikz.updatePosition(circles[0]);//acesses first item in array
+            physikz.updatePosition(circles[1]);//acesses second item in array
+            physikz.updatePosition(circles[2]);//acesses third item in array
+            physikz.updatePosition(circles[3]);//acesses fourth item in array
+            physikz.updatePosition(circles[4]);//acesses fifth item in array
 
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
             /*
@@ -71,6 +71,7 @@ var init = function (window) {
            game.checkCirclePosition(circles[3]);
            game.checkCirclePosition(circles[4]);
             */
+           // allows us to access each circle in the circles array using bracket notation
             // TODO 9 : Iterate over the array
            for(var i = 0; i < circles.length; i++){
             physikz.updatePosition(circles[i]);
@@ -101,6 +102,7 @@ var init = function (window) {
             if(circle.y < 0){
                 circle.y 
             }
+            //Each boundary check should be an independent if statement so that circles can loop from any side.
 
             // YOUR TODO 6 CODE ENDS HERE //////////////////////////
         }

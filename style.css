@@ -52,7 +52,10 @@ main {
   flex: 1;
   padding: 15px;
 }
-
+#interests {
+  border: 4px silver ridge;
+  padding: 8px;
+}
 /* portfolio styles */
 .content h1 {
   color: rgb(11, 0, 7);
