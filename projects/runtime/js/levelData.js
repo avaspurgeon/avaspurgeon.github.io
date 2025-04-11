@@ -15,7 +15,7 @@ var makeLevelData = function (window) {
         number: 1,
         speed: -3,
         gameItems: [
-
+      
 
           { type: "Asteroid", x: 600, y: groundY - 125, hitSize: 25, damage: 20,  image:"img/Asteroid.png",rotation: 0, offsetX: -70, offsetY: -70, Xscale: .5, Yscale: .5},
 
@@ -26,7 +26,7 @@ var makeLevelData = function (window) {
           { type: "Alien", x: 1000, y: groundY, hitSize: 25, damage: 20,  image:"img/Ailen.png", rotation: 0, offsetX: -50, offsetY: -50, Xscale: 0.2, Yscale: 0.2},
 
        
-          { type: "reward", x: 500, y: groundY, hitSize: 25, health: 20,  image:"img/Walkie Talkie.png", rotation: 0, offsetX: -50, offsetY: -50, Xscale: 0.2, Yscale: 0.2},
+          { type: "reward", x: 500, y: groundY, hitSize: 25, health: 20,  image:"img/WalkieTalkie.png", rotation: 0, offsetX: -50, offsetY: -50, Xscale: 0.2, Yscale: 0.2},
 
 
           { type: "level", x: 1700, y: groundY - 50, speed: 3,offsetX: -50, offsetY: -50, Xscale: 0.2, Yscale: 0.2},
